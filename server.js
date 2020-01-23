@@ -8,7 +8,7 @@ let url = require('url');
 let server = http.createServer((req, res) => {
 
   //Ouverture du fichier à lire
-  fs.readFile('indeax.html',(err, data) => {
+  fs.readFile('index.html',(err, data) => {
 
     if (err) throw err;
 
