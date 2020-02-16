@@ -1,11 +1,20 @@
-let http = require('http');
-let fs = require('fs');
-let url = require('url');
+var express = require('express');
 
-let server = http.createServer((req, res) => {
+var app = express();
 
-  res.writeHead(200);
-  res.end('Hi Everyone');
+app.get('/', (req, res) => {
+  res.setHeader('Content-Type', 'text/plain');
+  res.send('Vous êtes à l accueil');
+})
+
+.get('/name/:name', (req, res) => {
+  res.setHeader('Content-Type', 'text/plain');
+  res.send('Your name is : ' + req.params.name);
+})
+
+.use((req, res, next) => {
+  res.setHeader('Content-Type', 'text/plain');
+  res.status(404).send('404 !! Page not found.');
 });
 
-server.listen(8080);
+app.listen(8080);
