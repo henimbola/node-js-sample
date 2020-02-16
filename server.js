@@ -8,8 +8,7 @@ app.get('/', (req, res) => {
 })
 
 .get('/name/:name', (req, res) => {
-  res.setHeader('Content-Type', 'text/plain');
-  res.send('Your name is : ' + req.params.name);
+  res.render('templates/display-name.ejs', {name: req.params.name});
 })
 
 .use((req, res, next) => {
