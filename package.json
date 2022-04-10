@@ -1,11 +1,11 @@
 {
-  "name": "node-js-sample",
+  "name": "node-ts-sample",
   "version": "0.1.0",
   "description": "This is my first nodejs project",
-  "main": "server.js",
+  "main": "server.ts",
   "scripts": {
     "test": "start",
-    "start": "node server.js"
+    "start": "node server.ts"
   },
   "repository": {
     "type": "git",
