@@ -1,5 +1,5 @@
 {
-  "name": "my-first-nodejs",
+  "name": "node-js-sample",
   "version": "0.1.0",
   "description": "This is my first nodejs project",
   "main": "server.js",
