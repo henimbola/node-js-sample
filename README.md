@@ -15,7 +15,7 @@ or
 ## Run the server
 ```yarn start```
 
-## URLs of the code
+# URLs deployed by the app
 
 Root url :
 ```http://localhost:8080/```
