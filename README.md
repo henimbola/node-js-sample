@@ -14,3 +14,14 @@ or
 
 ## Run the server
 ```yarn start```
+
+## URLs of the code
+
+Root url :
+```http://localhost:8080/```
+
+Display your name in an ejs template :
+```http://localhost:8080/name/{your-name}```
+
+Display your name as Json with a Rest API url :
+```http://localhost:8080/api/info/{your-name}```
