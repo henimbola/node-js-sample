@@ -19,6 +19,7 @@
   "homepage": "https://github.com/henimbola/testNodeJs#readme",
   "dependencies": {
     "ejs": "^3.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "injection-js": "^2.4.0"
   }
 }
