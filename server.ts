@@ -1,6 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
+const multer = require('multer')
 
 const app = express()
 
@@ -27,5 +28,11 @@ app.get('/api/info/:name', (req, res) => {
 //   res.setHeader('Content-Type', 'text/plain');
 //   res.status(404).send('404 !! Page not found.');
 // });
+
+const upload = multer({ dest: 'tmp/' })
+
+app.post("/upload_file", upload.single('file'), (req, res, next) => {
+  res.send({ status: "success" })
+})
 
 app.listen(8080);
