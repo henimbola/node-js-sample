@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/henimbola/testNodeJs#readme",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "injection-js": "^2.4.0"
