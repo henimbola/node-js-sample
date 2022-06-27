@@ -2,8 +2,9 @@ doctype html
 html(lang="en")
   head
     title= pageTitle
-    script(type='text/javascript').
-      if (foo) bar(1 + 5);
+    script(src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js')
+    script(src="/js/main.js")
+        
   body
     h1 Pug - node template engine
     #container.col
@@ -14,3 +15,8 @@ html(lang="en")
       p.
         Pug is a terse and simple templating language with a
         strong focus on performance and powerful features.
+    
+    form.myForm
+        input(type="text", placeholder="text")
+        button(type="submit")
+            span Submit

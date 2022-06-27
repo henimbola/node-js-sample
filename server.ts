@@ -20,10 +20,6 @@ app.get('/', (req, res) => {
   res.send('Vous êtes à l accueil');
 });
 
-app.get('/name/:name', (req, res) => {
-  res.render('templates/display-name.ejs', { name: req.params.name });
-})
-
 app.get('/api/info/:name', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.send({ info: `test ${req.params.name}` });
@@ -33,6 +29,7 @@ app.post("/upload_file", upload.single('file'), (req, res, next) => {
   res.send({ status: "success" })
 })
 
+// PUG
 app.get("/pug_view", (req, res) => res.render('file-upload', {
   youAreUsingPug: true
 }));
