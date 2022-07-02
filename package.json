@@ -1,5 +1,5 @@
 {
-  "name": "node-ts-sample",
+  "name": "node-ts-starter",
   "version": "0.1.0",
   "description": "This is my first nodejs project",
   "main": "server.ts",
@@ -21,7 +21,6 @@
     "@types/multer": "^1.4.7",
     "@types/node": "^18.0.0",
     "body-parser": "^1.20.0",
-    "ejs": "^3.0.1",
     "express": "^4.17.1",
     "global": "^4.4.0",
     "injection-js": "^2.4.0",
